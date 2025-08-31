@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Dashboard</title>
+  <link rel="stylesheet" href="steph.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <h2>QZO <span>Brand</span></h2>
+        <p>Protector</p>
+      </div>
+      <nav>
+        <a href="#" class="active">Summary</a>
+        <a href="#">Transaction</a>
+        <a href="#">Statistics</a>
+        <a href="#">Product</a>
+        <a href="#">Category</a>
+      </nav>
+      <div class="profile">
+        <img src="https://i.pravatar.cc/100" alt="profile">
+        <div class="info">
+          <p>Sally Hawkins</p>
+          <button class="upgrade">UPGRADE</button>
+        </div>
+      </div>
+    </aside>
 
+    <!-- Main Content -->
+    <main class="main">
+      <header class="header">
+        <h1>Business Dashboard</h1>
+        <div class="search">
+          <input type="text" placeholder="Search...">
+        </div>
+      </header>
+
+      <!-- Stats Cards -->
+      <section class="cards">
+        <div class="card">Customers <h2>54,235</h2></div>
+        <div class="card">Income <h2>$980,632</h2></div>
+        <div class="card">Products Sold <h2>5,490</h2></div>
+      </section>
+
+      <!-- Marketplace -->
+      <section class="marketplace">
+        <div class="box">
+          <h3>Data Analytics Overview</h3>
+          <p>See how your account grow and how you can boost it.</p>
+          <button>Start</button>
+        </div>
+        <div class="box">
+          <h3>Finance Flow</h3>
+          <p>$2,530</p>
+          <small>September 2021</small>
+        </div>
+        <div class="box upgrade-box">
+          <h3>Upgrade to Pro</h3>
+          <p>$29 p/m</p>
+          <small>100% insurance for your goods</small>
+        </div>
+      </section>
+
+      <!-- Recent Orders -->
+      <section class="orders">
+        <h3>Recent Orders</h3>
+        <table>
+          <tr>
+            <th>ID</th><th>Product</th><th>Date</th><th>Price</th><th>Status</th>
+          </tr>
+          <tr>
+            <td>#1235465</td><td>DJI Mavic Pro 2</td><td>Sep 16, 2021</td><td>$42.00</td><td class="delivered">Delivered</td>
+          </tr>
+          <tr>
+            <td>#1235468</td><td>iPad Pro 2017 Model</td><td>Sep 15, 2021</td><td>$932.00</td><td class="canceled">Canceled</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <!-- Right Summary -->
+    <aside class="summary">
+      <div class="balance">
+        <h2>Your Balance</h2>
+        <h1>$10,632.00</h1>
+        <p class="green">+$3,250.07</p>
+        <p class="red">-$1,062.90</p>
+      </div>
+
+      <div class="activity">
+        <h3>Activity</h3>
+        <div class="item">
+          <p>Withdraw Earning</p><span>$4,120</span>
+        </div>
+        <div class="item">
+          <p>Paying Website tax</p><span>-$230</span>
+        </div>
+      </div>
+
+      <div class="categories">
+        <h3>Top Categories</h3>
+        <div class="cat">Footwear <span>18,941 units</span></div>
+        <div class="cat">Accessories <span>26,061 units</span></div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
