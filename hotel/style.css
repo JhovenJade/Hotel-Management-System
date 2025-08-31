@@ -1,13 +1,15 @@
 /* Global */
 body {
   margin: 0;
-  font-family: poppins, sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
-
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .sidebar {
-   width: 250px;
+  width: 250px;
   background-color: #0d2e6d;
   color: white;
   min-height: 100vh;
@@ -17,6 +19,7 @@ body {
   top: 0;
   left: 0;
   justify-content: space-between; /* 🔹 pushes logo/nav up, bottom-nav down */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 1); 
 }
 .logo {
   padding: 20px;
@@ -37,6 +40,14 @@ body {
 .nav li {
   padding: 15px 20px;
   cursor: pointer;
+  display: flex;              /* 🔹 flexbox for alignment */
+  align-items: center;        /* 🔹 vertical centering */
+  gap: 10px;                  /* 🔹 space between icon & text */
+}
+.nav li img {
+  width: 24px;                /* 🔹 force image size */
+  height: 24px;
+  object-fit: contain;        /* keeps aspect ratio */
 }
 .nav li:hover {
   background-color: #2558bd;
@@ -58,20 +69,35 @@ body {
   justify-content: space-between; /* 🔹 keeps top logo/nav up & buttons down */
 }
 
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo h2{
+  margin: 0;
+  font-size: 30px;
+}
+
+.logo img{
+  margin: 0;
+}
+
 /* Button container */
 .button-nav {
   margin-bottom: 500px;    /* spacing from bottom */
   display: flex;
   flex-direction: column;
   align-items: center;    
-  gap: 15px;   
+  gap: 10px;   
 }
 
 /* Settings button */
 .button-nav .set {
   background-color: #ffffff;
   color: black;
-  margin-top: 200px; 
+  margin-top: 150px; 
   padding: 10px 20px;
   border-radius: 25px;    
   border: none;           
@@ -80,6 +106,7 @@ body {
   text-align: center;
   width: 150px;
   transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,2);
 }
 
 /* Log out button */
@@ -94,11 +121,18 @@ body {
   text-align: center;
   width: 150px;
   transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,2);
 }
 
 /* Hover effect for both */
 .button-nav button:hover {
   background-color: #f1f1f1;
+}
+
+.button-nav img {
+  width: 16px;                /* 🔹 force image size */
+  height: 16px;
+  object-fit: contain;        /* keeps aspect ratio */
 }
 
 /* Main content */
@@ -155,6 +189,7 @@ body {
   font-weight: 800;
   margin-bottom: 20px;
   font-family:cinzel, serif;
+  margin-left: 20px;
 }
 
 /* Cards */
@@ -167,7 +202,7 @@ body {
 .card {
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 .card p {
   color: #6B7280;
@@ -203,7 +238,7 @@ body {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 .panel h3 {
   margin-bottom: 15px;
@@ -233,4 +268,14 @@ hr{
   border: none;
   border-top: 2px solid #eeca00;
   margin: 10px 0 20px 0;
+}
+
+.head {
+  border: none;
+  border-top: 2px solid #c2c2c2;
+  width: 100%;
+}
+.avatar{
+  background: #0d2e6d;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
