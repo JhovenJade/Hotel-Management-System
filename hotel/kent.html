@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Hotel Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="hotel.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">Vivere Grand</div>
+    <hr>
+    <nav class="nav">
+      <ul>
+        <li class="active">📊 Dashboard</li>
+        <li>📅 Bookings</li>
+        <li>👥 Guests</li>
+        <li>📑 Reports</li>
+      </ul>
+    </nav>
+    <div class="bottom-nav">
+      <div>⚙ Settings</div>
+      <div>↪ Log out</div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Top bar -->
+    <div class="topbar">
+         <h2 class="welcome">Welcome back, Steph</h2>
+      <div class="profile">
+        <span class="bell">🔔</span>
+        <div class="user-info">
+          <p class="name">Steph Sagun</p>
+          <p class="role">Hotel Manager</p>
+        </div>
+        <div class="avatar">SS</div>
+      </div>
+    </div>
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card green">
+        <p>Occupancy Rate</p>
+        <h3>78%</h3>
+        <span class="growth">+5%</span>
+      </div>
+      <div class="card purple">
+        <p>Check-ins Today</p>
+        <h3>24</h3>
+        <span>8 pending</span>
+      </div>
+      <div class="card pink">
+        <p>Reservations</p>
+        <h3>156</h3>
+        <span>Next 7 days</span>
+      </div>
+      <div class="card green">
+        <p>Revenue</p>
+        <h3>₱120,450</h3>
+        <span>This week</span>
+      </div>
+    </div>
+
+    <!-- Chart and Room Status -->
+    <div class="grid">
+      <!-- Chart -->
+      <div class="panel">
+        <h3>Weekly Occupancy Rate (%)</h3>
+        <canvas id="occupancyChart"></canvas>
+      </div>
+
+      <!-- Room Status -->
+      <div class="panel">
+        <h3>Room Status</h3>
+
+        <p>Standard Rooms (32 / 40 occupied)</p>
+        <div class="progress-bar">
+          <div class="fill blue" style="width:80%"></div>
+        </div>
+
+        <p>Deluxe Rooms (18 / 25 occupied)</p>
+        <div class="progress-bar">
+          <div class="fill blue" style="width:72%"></div>
+          <div class="fill red" style="width:10%"></div>
+        </div>
+
+        <p>Suite Rooms (10 / 15 occupied)</p>
+        <div class="progress-bar">
+          <div class="fill blue" style="width:66%"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
