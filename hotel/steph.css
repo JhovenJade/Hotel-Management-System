@@ -94,6 +94,8 @@ body {
 /* Main */
 .main {
   padding: 20px;
+    overflow-y: auto;
+    margin-top: 10px;
 }
 
 .header {
@@ -179,6 +181,13 @@ body {
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); 
 }
 
+.balance{
+  background: #ebebeb;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}  
+
 .balance h1 {
   font-size: 28px;
   margin: 10px 0;
@@ -187,12 +196,23 @@ body {
 .green { color: green; }
 .red { color: red; }
 
+.activity{
+      background: #ebebeb;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 .activity .item {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
 }
 
+.categories {
+  background: #ebebeb;
+  padding: 20px;
+  border-radius: 15px;
+}
 .categories .cat {
   margin-top: 10px;
   padding: 10px;
