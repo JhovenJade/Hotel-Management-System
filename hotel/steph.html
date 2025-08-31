@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management Dashboard</title>
+  <link rel="stylesheet" href="steph.css">
+  <link rel href="hotel.png" rel="icon">
+</head>
+<body>
+  <div class="dashboard">
 
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <h2>Hotel</h2>
+        <p>Management</p>
+      </div>
+      <nav>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Bookings</a>
+        <a href="#">Guests</a>
+        <a href="#">Facilities</a>
+        <a href="#">CRM</a>
+        <a href="#">Reports</a>
+      </nav>
+      <div class="profile">
+        <img src="" alt="profile">
+        <div class="info">
+          <p>Manager</p>
+          <button class="upgrade">Logout</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="header">
+        <h1>Hotel Management Dashboard</h1>
+        <div class="search">
+          <input type="text" placeholder="Search bookings...">
+        </div>
+      </header>
+
+      <!-- KPIs -->
+      <section class="cards">
+        <div class="card">Active Bookings <h2>245</h2></div>
+        <div class="card">Revenue <h2>$58,320</h2></div>
+        <div class="card">Occupancy Rate <h2>78%</h2></div>
+        <div class="card">Facilities In Use <h2>12</h2></div>
+      </section>
+
+      <!-- Booking Flow -->
+      <section class="marketplace">
+        <div class="box">
+          <h3>New Reservations</h3>
+          <p>35 today</p>
+          <button>Add Booking</button>
+        </div>
+        <div class="box">
+          <h3>Check-ins</h3>
+          <p>12</p>
+        </div>
+        <div class="box">
+          <h3>Check-outs</h3>
+          <p>8</p>
+        </div>
+        <div class="box upgrade-box">
+          <h3>Facility Requests</h3>
+          <p>Pool, Gym, Spa</p>
+          <small>Pending approvals</small>
+        </div>
+      </section>
+
+      <!-- Recent Reservations -->
+      <section class="orders">
+        <h3>Recent Reservations</h3>
+        <table>
+          <tr>
+            <th>ID</th><th>Guest</th><th>Room</th><th>Check-in</th><th>Check-out</th><th>Status</th>
+          </tr>
+          <tr>
+            <td>#R12345</td><td>John Smith</td><td>Deluxe Suite</td><td>Aug 30</td><td>Sep 2</td><td class="confirmed">Confirmed</td>
+          </tr>
+          <tr>
+            <td>#R12346</td><td>Emily Davis</td><td>Standard Room</td><td>Aug 31</td><td>Sep 3</td><td class="canceled">Canceled</td>
+          </tr>
+          <tr>
+            <td>#R12347</td><td>Michael Lee</td><td>Presidential Suite</td><td>Sep 1</td><td>Sep 5</td><td class="pending">Pending</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <!-- Right Summary -->
+    <aside class="summary">
+      <div class="balance">
+        <h2>Hotel Balance</h2>
+        <h1>$120,450</h1>
+        <p class="green">+ $5,320 Today</p>
+        <p class="red">- $420 Refunds</p>
+      </div>
+
+      <div class="activity">
+        <h3>Today's Activity</h3>
+        <div class="item"><p>New Booking</p><span>$1,200</span></div>
+        <div class="item"><p>Guest Check-in</p><span>8</span></div>
+        <div class="item"><p>Payment Collected</p><span>$3,900</span></div>
+      </div>
+
+      <div class="categories">
+        <h3>Top Facilities</h3>
+        <div class="cat">Rooms <span>180 occupied</span></div>
+        <div class="cat">Pool <span>45 guests</span></div>
+        <div class="cat">Gym <span>28 guests</span></div>
+        <div class="cat">Spa <span>12 sessions</span></div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="steph.js"></script>
+</body>
+</html>

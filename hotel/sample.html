@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="sample.css">
+
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">⚡ Logo Here</div>
+      <nav>
+        <a href="#">🏠 Dashboard</a>
+        <a href="#">💬 Messages</a>
+        <a href="#">📊 Report</a>
+        <a href="#">⚙️ Setting</a>
+        <a href="#">🔒 Privacy</a>
+      </nav>
+      <button class="logout">Logout</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <input type="text" placeholder="Search...">
+        <div class="user-actions">
+          <button class="notif">🔔</button>
+          <div class="profile">YN</div>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <section class="dashboard">
+        <div class="card large">
+          <h3>Analytics</h3>
+          <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="card">
+          <h3>Visitors</h3>
+          <p>12.9K Visitors</p>
+          <p>212.9K Views</p>
+          <p>65% Growth</p>
+          <p>Avg Time: 1m 45s</p>
+        </div>
+
+        <div class="card">
+          <h3>Stats</h3>
+          <p>230 Sold out</p>
+          <p>2 Refund</p>
+          <p>1500 Stock</p>
+          <canvas id="lineChart"></canvas>
+        </div>
+
+        <div class="card">
+          <h3>Progress</h3>
+          <canvas id="doughnut1"></canvas>
+          <canvas id="doughnut2"></canvas>
+          <canvas id="doughnut3"></canvas>
+        </div>
+
+        <div class="card">
+          <h3>Top Products</h3>
+          <ul>
+            <li>Product 1</li>
+            <li>Product 2</li>
+            <li>Product 3</li>
+          </ul>
+          <h3>Top Buyers</h3>
+          <ul>
+            <li>Buyer 1</li>
+            <li>Buyer 2</li>
+            <li>Buyer 3</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
