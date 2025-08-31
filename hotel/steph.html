@@ -13,25 +13,25 @@
     <!-- Sidebar -->
     <aside class="sidebar">
        <div class="brand">
-        <img src="logo.png" alt="logo" width="50" height="50">
+        <img src="logo.png" alt="logo" width="60" height="60">
         <div class="brand-text">
         <h2>Hotel</h2>
         <p>Management</p>
         </div>
     </div>
       <nav>
-        <a href="#" class="active">Dashboard</a>
-        <a href="#">Bookings</a>
-        <a href="#">Guests</a>
-        <a href="#">Facilities</a>
+        <a href="#" class="active">DASHBOARD</a>
+        <a href="#">BOOKINGS</a>
+        <a href="#">GUEST</a>
+        <a href="#">FACILITY</a>
         <a href="#">CRM</a>
-        <a href="#">Reports</a>
+        <a href="#">REPORT</a>
       </nav>
       <div class="profile">
         <img src="dog.jpg" alt="profile">
         <div class="info">
           <p>Manager</p>
-          <button class="upgrade">Logout</button>
+          <button class="logout">Logout</button>
         </div>
       </div>
     </aside>
@@ -58,7 +58,7 @@
         <div class="box">
           <h3>New Reservations</h3>
           <p>35 today</p>
-          <button>Add Booking</button>
+          <button class="book">Add Booking</button>
         </div>
         <div class="box">
           <h3>Check-ins</h3>
@@ -80,16 +80,40 @@
         <h3>Recent Reservations</h3>
         <table>
           <tr>
-            <th>ID</th><th>Guest</th><th>Room</th><th>Check-in</th><th>Check-out</th><th>Status</th>
+            <th>ID</th>
+            <th>Guest</th>
+            <th>Room</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Status</th>
+            <th>Action</th>
           </tr>
           <tr>
-            <td>#R12345</td><td>John Smith</td><td>Deluxe Suite</td><td>Aug 30</td><td>Sep 2</td><td class="confirmed">Confirmed</td>
+            <td>#R12345</td>
+            <td>John Smith</td>
+            <td>Deluxe Suite</td>
+            <td>Aug 30</td>
+            <td>Sep 2</td>
+            <td class="confirmed">Confirmed</td>
+            <td><button class="edit">Edit</button></td>
           </tr>
           <tr>
-            <td>#R12346</td><td>Emily Davis</td><td>Standard Room</td><td>Aug 31</td><td>Sep 3</td><td class="canceled">Canceled</td>
+            <td>#R12346</td>
+            <td>Emily Davis</td>
+            <td>Standard Room</td>
+            <td>Aug 31</td>
+            <td>Sep 3</td>
+            <td class="canceled">Canceled</td>
+            <td><button class="edit">Edit</button></td>
           </tr>
           <tr>
-            <td>#R12347</td><td>Michael Lee</td><td>Presidential Suite</td><td>Sep 1</td><td>Sep 5</td><td class="pending">Pending</td>
+            <td>#R12347</td>
+            <td>Michael Lee</td>
+            <td>Presidential Suite</td>
+            <td>Sep 1</td>
+            <td>Sep 5</td>
+            <td class="pending">Pending</td>
+            <td><button class="edit">Edit</button></td>
           </tr>
         </table>
       </section>

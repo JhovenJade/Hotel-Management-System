@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f5f7fb;
+  background: #ebebeb;
   color: #333;
 }
 
@@ -19,29 +19,30 @@ body {
 
 /* Sidebar */
 .sidebar {
-  background: #fff;
-  padding: 20px;
+  background: #ebebeb;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #c2c2c2;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .sidebar .brand {
   display: flex;
   align-items: center;
-  gap: 10px; /* space between logo and text */
+  gap: 10px; 
 }
 
 .brand-text h2 {
   margin: 0;
-  font-size: 20px;
-  color: #555;
+  font-size:30px;
+  color: #AA9D61;
 }
 
 .brand-text p {
   margin: 0;
-  font-size: 14px;
-  color: #777;
+  font-size: 20px;
+  color: #AA9D61;
 }
 
 
@@ -58,11 +59,12 @@ body {
   text-decoration: none;
   color: #444;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .sidebar nav a.active,
 .sidebar nav a:hover {
-  background: #6c63ff;
+  background: #0d2e6d;
   color: #fff;
 }
 
@@ -79,8 +81,8 @@ body {
   border-radius: 50%;
 }
 
-.sidebar .profile .upgrade {
-  background: #ff4d6d;
+.sidebar .profile .logout {
+  background: #0d2e6d;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -115,7 +117,7 @@ body {
 
 .card {
   flex: 1;
-  background: linear-gradient(135deg, #6c63ff, #836fff);
+  background: linear-gradient(to bottom right, #0d2e6d, #214da0);
   color: #fff;
   padding: 20px;
   border-radius: 15px;
@@ -135,23 +137,24 @@ body {
 
 .marketplace .box {
   flex: 1;
-  background: #fff;
+  background: #f5f5f5;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
 .upgrade-box {
-  background: #ffe9ed;
+  background: #f5f5f5;
 }
 
 /* Orders */
 .orders table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: #f5f5f5;
   border-radius: 12px;
   overflow: hidden;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .orders th, .orders td {
@@ -170,9 +173,10 @@ body {
 
 /* Summary Panel */
 .summary {
-  background: #fff;
+  background: #ebebeb;
   padding: 20px;
-  border-left: 1px solid #eee;
+  border-left: 1px solid #c2c2c2;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .balance h1 {
@@ -194,4 +198,25 @@ body {
   padding: 10px;
   border-radius: 12px;
   background: #f5f7fb;
+}
+
+.marketplace .box button{
+    background: #0d2e6d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.orders button.edit {
+  background: #0d2e6d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 12px;
 }
