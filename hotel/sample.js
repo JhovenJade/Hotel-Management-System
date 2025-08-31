@@ -9,7 +9,7 @@ new Chart(barCtx, {
     labels: ["October", "November", "December"],
     datasets: [{
       label: "Visitors",
-      data: [120, 200, 140],
+      data: [0, 0, 0],
       backgroundColor: "#2e6f57"
     }]
   },
@@ -24,7 +24,7 @@ new Chart(lineCtx, {
     labels: ["10AM", "11AM", "12PM", "1PM", "2PM"],
     datasets: [{
       label: "Sales",
-      data: [20, 40, 35, 50, 60],
+      data: [0, 0, 0, 0, 0],
       borderColor: "#2e6f57",
       fill: false
     }]
@@ -42,10 +42,10 @@ function createDoughnut(id, value, color) {
         backgroundColor: [color, "#eaeaea"]
       }]
     },
-    options: { cutout: "70%", plugins: { legend: { display: false } } }
+    options: { cutout: "0%", plugins: { legend: { display: false } } }
   });
 }
 
-createDoughnut("doughnut1", 85, "#f4a261");
-createDoughnut("doughnut2", 40, "#e76f51");
-createDoughnut("doughnut3", 65, "#2a9d8f");
+createDoughnut("doughnut1", 0, "#f4a261");
+createDoughnut("doughnut2", 0, "#e76f51");
+createDoughnut("doughnut3", 0, "#2a9d8f");
